@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-remark-relative-linker",
+  "name": "gatsby-remark-link-rewrite",
   "description": "It can freely rewrite the link URL of Markdown.",
   "version": "0.1.0",
   "author": {

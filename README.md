@@ -25,3 +25,8 @@ It is a plugin of [`gatsby-transformer-remark`](https://github.com/gatsbyjs/gats
 ## See also
 
 [I use it plugin in my project](https://github.com/danmaq/danmaq.gatsby).
+
+## TODO (Memo)
+
+* Babel
+* CI

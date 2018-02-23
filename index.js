@@ -2,7 +2,7 @@ const visit = require('unist-util-visit');
 
 module.exports = ({ markdownAST }, pluginOptions) => {
   const defaults = { pattern: /^(.*)$/, replace: '$1' };
-  const options = { ...defaults, ...pluginOptions };
+  const { pattern, replace } = Object.assign(defaults, pluginOptions);
   
   /** @type {{(node: {url: string}) => void}} */
   const visitor = (node) => {
