@@ -1,9 +1,12 @@
 const visit = require('unist-util-visit');
 
-module.exports = ({ markdownAST }) => {
+module.exports = ({ markdownAST }, pluginOptions) => {
+  const defaults = { pattern: /^(.*)$/, replace: '$1' };
+  const options = { ...defaults, ...pluginOptions };
+  
   /** @type {{(node: {url: string}) => void}} */
   const visitor = (node) => {
-    node.url = node.url.replace(/^\/posts\/(.*)\.(\w{2}).md(#.*)?$/, '/$2/$1$3/');
+    node.url = node.url.replace(pattern, replace);
   };
   visit(markdownAST, 'link', visitor);
   return markdownAST;
