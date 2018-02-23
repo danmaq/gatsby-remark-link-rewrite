@@ -1,7 +1,7 @@
 {
   "name": "gatsby-remark-link-rewrite",
   "description": "It can freely rewrite the link URL of Markdown.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Shuhei Nomura (danmaq)",
     "email": "info@danmaq.com",

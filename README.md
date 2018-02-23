@@ -29,4 +29,5 @@ It is a plugin of [`gatsby-transformer-remark`](https://github.com/gatsbyjs/gats
 ## TODO (Memo)
 
 * Babel
-* CI
+* Testing
+* CI using Wercker.
