@@ -1,0 +1,26 @@
+{
+  "name": "gatsby-remark-relative-linker",
+  "description": "It can freely rewrite the link URL of Markdown.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Shuhei Nomura (danmaq)",
+    "email": "info@danmaq.com",
+    "url": "https://danmaq.com/"
+  },
+  "license": "MIT",
+  "keywords": [
+    "gatsby"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=9.5.0"
+  },
+  "dependencies": {
+    "unist-util-visit": "^1.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0"
+  }
+}
