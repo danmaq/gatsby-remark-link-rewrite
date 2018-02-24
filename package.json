@@ -7,6 +7,8 @@
     "email": "info@danmaq.com",
     "url": "https://danmaq.com/"
   },
+  "homepage": "https://github.com/danmaq/gatsby-remark-link-rewrite",
+  "repository": "danmaq/gatsby-remark-link-rewrite",
   "license": "MIT",
   "keywords": [
     "gatsby"
