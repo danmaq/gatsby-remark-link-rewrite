@@ -18,7 +18,8 @@
   ],
   "main": "index.js",
   "scripts": {
-    "prepublish": "babel src -o index.js"
+    "prepublish": "babel src -o index.js",
+    "start": "watch \"yon run prepublish\" src"
   },
   "engines": {
     "node": ">=9.5.0"
