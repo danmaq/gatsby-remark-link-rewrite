@@ -59,6 +59,7 @@ typings/
 
 # Build directory
 /.wercker
+/index.js
 
 # OS
 .DS_Store
