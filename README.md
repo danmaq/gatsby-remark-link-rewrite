@@ -34,5 +34,6 @@ It is a plugin of [`gatsby-transformer-remark`](https://github.com/gatsbyjs/gats
 
 ## TODO (Memo)
 
-* Testing
+* Babel for Node LTS user.
+* Testing. (How do it...?)
 * CI using Wercker.
