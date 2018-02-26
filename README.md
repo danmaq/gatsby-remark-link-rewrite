@@ -22,12 +22,17 @@ It is a plugin of [`gatsby-transformer-remark`](https://github.com/gatsbyjs/gats
 },
 ```
 
+## Options
+
+### `pattern`: RegExp
+
+### `replace`: string
+
 ## See also
 
 [I use it plugin in my project](https://github.com/danmaq/danmaq.gatsby).
 
 ## TODO (Memo)
 
-* Babel
 * Testing
 * CI using Wercker.
