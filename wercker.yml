@@ -1,0 +1,28 @@
+box: node
+
+build:
+  steps:
+    - script:
+      name: Installing Dependencies.
+      code: yarn install
+    - script:
+      name: Testing.
+      code: yarn test
+deploy:
+  steps:
+    - install-packages:
+      packages: expect
+    - script:
+      name: Collect the app version number.
+      code: export APPVER=`node -e "process.stdout.write(require('./package.json').version)"`
+    - github-create-release:
+      token: ${GITHUB_TOKEN}
+      tag: "v${APPVER}"
+    - script:
+      name: Download publish script.
+      code: |
+        wget -o publish.exp https://gist.githubusercontent.com/danmaq/0af64a0b6f3e795010c444d5f27e9d14/raw/e9464d32e576ebed23d6d88b978f90c289feddde/yarn_publish.exp
+        chmod 755 publish.exp
+    - script:
+      name: Publish wadjet.
+      code: ./publish.exp ${NPM_USER} ${NPM_EMAIL} ${NPM_PASS}
