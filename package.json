@@ -18,8 +18,10 @@
   ],
   "main": "index.js",
   "scripts": {
+    "eslint": "eslint src/",
     "prepublish": "babel src -o index.js",
-    "start": "watch \"yon run prepublish\" src"
+    "start": "watch \"yon run prepublish\" src",
+    "test": "yon run eslint"
   },
   "engines": {
     "node": ">=6.13.0"

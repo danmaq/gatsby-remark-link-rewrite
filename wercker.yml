@@ -5,7 +5,9 @@ build:
     - script:
       name: Installing Dependencies.
       code: yarn install
-
+    - script:
+      name: Testing.
+      code: yarn test
 deploy:
   steps:
     - install-packages:
