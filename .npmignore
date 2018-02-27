@@ -2,6 +2,5 @@
 .eslintrc
 .vscode
 node_modules
-publish.exp
 src
 wercker.yml
